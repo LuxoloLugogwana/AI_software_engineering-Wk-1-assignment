@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course • Mini e‑Learning</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="back-link" href="./index.html">← All Courses</a>
+      <h1 id="course-title" class="brand">Loading…</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="course-intro">
+      <p id="course-desc" class="lead"></p>
+
+      <div class="progress-wrap">
+        <div class="progress" aria-label="Course progress">
+          <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div id="progress-label" class="progress-label">0% complete</div>
+      </div>
+
+      <div class="actions">
+        <button id="complete-btn" class="btn btn-success">Mark course completed</button>
+        <button id="reset-btn" class="btn btn-secondary">Reset progress</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Lessons</h3>
+      <ul id="lesson-list" class="lesson-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Mini e‑Learning</span>
+    </div>
+  </footer>
+
+  <script defer src="./data.js"></script>
+  <script defer src="./storage.js"></script>
+  <script defer src="./course.js"></script>
+</body>
+</html>
